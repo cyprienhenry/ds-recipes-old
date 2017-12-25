@@ -20,7 +20,7 @@ datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')
 ```
 
 ```
-'2017-12-21 14:09:15.170609'
+'2017-12-25 19:10:59.460456'
 ```
 
 
@@ -44,8 +44,9 @@ datetime.datetime(2012, 7, 22, 16, 19, 0, 539570)
 
 
 ```python
-pandoc -o Big_data_Coursera.html Big_data_degree_Coursera.md --template=GitHub.html5
-pweave -f md2html python.pmd
+pweave -f pandoc python.pmD
+pandoc -o python.html python.md --template=GitHub.html5
+# pweave -f md2html python.pmd
 ```
 
 
