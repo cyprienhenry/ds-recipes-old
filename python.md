@@ -5,10 +5,10 @@
 * [Dates](#dates)
 * [Exploratory Data Analysis](#eda)
 
-##<a name="dataframes"></a>DataFrames
+## <a name="dataframes"></a>DataFrames
 
 
-##<a name="dates"></a> Working with dates
+## <a name="dates"></a> Working with dates
 The list of **date formatters can be found [here](https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior)**.
 
 ### From `datetime` to `string`:
@@ -20,7 +20,7 @@ datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')
 ```
 
 ```
-'2017-12-25 19:10:59.460456'
+'2017-12-25 19:15:42.389311'
 ```
 
 
@@ -39,12 +39,12 @@ datetime.datetime(2012, 7, 22, 16, 19, 0, 539570)
 
 
 
-###<a name="dataframes"></a>Exploratory Data Analysis
+### <a name="dataframes"></a>Exploratory Data Analysis
 
 
 
 ```python
-pweave -f pandoc python.pmD
+pweave -f pandoc python.pmd
 pandoc -o python.html python.md --template=GitHub.html5
 # pweave -f md2html python.pmd
 ```
