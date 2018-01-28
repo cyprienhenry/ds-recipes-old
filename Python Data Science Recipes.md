@@ -10,6 +10,7 @@ The purpose of this workbook is to act as a quick reference guide / list of reci
 * [Deal with NAs](#NAs)
 * [Deal with constant / quasi-constant variables](#constant_variables)
 * [Load data from multiple files and concatenate](#load_concat)
+* [Force Python to reload a module](#module_reload) 
 * [Save a dataframe to .csv](#save_csv)
 
 ___
@@ -555,6 +556,17 @@ df1
 </div>
 
 
+
+# <a name='module_reload'></a>Force Python to reload a module
+
+Once a module has been loaded using `import module_name`, running this same command again will not reload the module. 
+
+Say you are making changes on a module and testing the result interactively in a python shell. If you have loaded the module once and want to see the new changes you have to use:
+
+```{python}
+import importlib
+importlib.reload(module_name)
+```
 
 ___
 
