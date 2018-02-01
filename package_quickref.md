@@ -1,5 +1,8 @@
 Here is a list of common packages to use during a data science project. Packages are listed depending on the task to accomplish.
 
+# Visualization
+* Scatter matrix `from pandas.plotting import scatter_matrix`
+
 # Models
 ## Linear algorithms
 
