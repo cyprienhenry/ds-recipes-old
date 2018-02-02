@@ -7,25 +7,30 @@ Here is a list of common packages to use during a data science project. Packages
 * Pipelines `from sklearn.pipeline import Pipeline`
 * Standardization `from sklearn.preprocessing import StandardScaler`
 
+
 # Models
 ## Linear algorithms
-* Lasso `from sklearn.linear_model import Lasso`
 * ElasticNet `from sklearn.linear_model import ElasticNet`
+* Lasso `from sklearn.linear_model import Lasso`
+* LDA `from sklearn.discriminant_analysis import LinearDiscriminantAnalysis`
 * Linear regression `from sklearn.linear_model import LinearRegression`
 * Logistic regression `from sklearn.linear_model import LogisticRegression`
-* LDA `from sklearn.discriminant_analysis import LinearDiscriminantAnalysis`
 
 ## Non linear algorithms
 * CART `from sklearn.tree import DecisionTreeClassifier`
+* Gradient Boosted Trees `from sklearn.ensemble import GradientBoostingClassifier`
 * KNN `from sklearn.neighbors import KNeighborsClassifier`
 * Naive Bayes `from sklearn.naive_bayes import GaussianNB`
+* Random Forest `from sklearn.ensemble import RandomForestClassifier`
 * SVM `from sklearn.svm import SVC`
 
+
 # Model evaluation (split data, CV, scoring)
-* Split Train / test sets `from sklearn.model_selection import train_test_split` [doc here](http://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html)
-
-
+## Cross-validation
+* Grid search `from sklearn.model_selection import GridSearchCV`
 * Perform CV `from sklearn.model_selection import cross_val_score` [doc_here](http://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_val_score.html)
+* Split Train / test sets `from sklearn.model_selection import train_test_split` [doc here](http://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html)
+* Timeseries split `from sklearn.model_selection import TimeSeriesSplit`
 
 ## Scoring / results
 * Accuracy score `from sklearn.metrics import accuracy_score`
