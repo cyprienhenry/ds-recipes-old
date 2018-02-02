@@ -3,9 +3,15 @@ Here is a list of common packages to use during a data science project. Packages
 # Visualization
 * Scatter matrix `from pandas.plotting import scatter_matrix`
 
+# Preprocessing
+* Pipelines `from sklearn.pipeline import Pipeline`
+* Standardization `from sklearn.preprocessing import StandardScaler`
+
 # Models
 ## Linear algorithms
-
+* Lasso `from sklearn.linear_model import Lasso`
+* ElasticNet `from sklearn.linear_model import ElasticNet`
+* Linear regression `from sklearn.linear_model import LinearRegression`
 * Logistic regression `from sklearn.linear_model import LogisticRegression`
 * LDA `from sklearn.discriminant_analysis import LinearDiscriminantAnalysis`
 
